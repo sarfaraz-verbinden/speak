@@ -140,120 +140,6 @@ function admin_way_top(){
 ';
 }
 
-function admin_way_top_public(){
-	$connect = $GLOBALS['connect'];
-	$common = $GLOBALS['common'];
-	$site_name = $GLOBALS['site_name'];
-	$favicon = $GLOBALS['favicon'];
-	error_reporting(0);
-	/*if(!$common->CheckLogin())
-	{
-		$common->RedirectToURL("login.php");
-		exit;
-	}*/
-	echo '<!DOCTYPE html>
-	<html>
-	<head>
-	  <meta charset="utf-8"> 
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <title>Speaker Engage | Admin Portal</title>
-	  <!-- Tell the browser to be responsive to screen width -->
-	  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	  <!-- App Favicon -->
-		<link rel="shortcut icon" href="images/favicon.ico">
-
-		<!-- App Title -->
-		<title>'.$site_name.' | Admin Portal</title>
-	  <!-- Bootstrap 3.3.7 -->
-	  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-	 
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	  <!-- Ionicons -->
-	  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
-	  <!-- DataTables -->
-      <link href="assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-	  <link href="assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />		
-	  <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
-	  <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css" />
-	  <!-- Theme style -->
-	  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
-	  <!-- AdminLTE Skins. Choose a skin from the css/skins
-		   folder instead of downloading all of them to reduce the load. -->
-	  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
-	  <!-- Morris chart -->
-	  <link rel="stylesheet" href="bower_components/morris.js/morris.css">
-	  
-	  <!-- Date Picker -->
-	  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-	  <!-- Daterange picker -->
-	  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
-	  
-
-	  <!-- Google Font -->
-	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-	  
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	  
-	  
-
-	  <style>
-	  .modal img#banner_image {
-    max-width: 615px;
-}
-    .wrapper {
-      overflow: hidden !important;
-    }
-	  @media (min-width: 768px){
-	  .modal-content{ margin-top: 30px !important;width: 50% !important;margin: 0 auto !important; }
-	  .custom-modal-text {padding:15px !important;}
-	  }
-	   .cropme img{ width:600px !important; }
-	    .multiselect.dropdown-toggle.btn.btn-default{
-			  text-align:left;
-		  }
-		  .btn-group .caret{
-			  float: right;
-    margin-top: 8px;
-		  }
-		  .mce-content-body a[href]{color:blue !important;}
-		  .alert-cust{
-			  background-color: #fcf8e3  !important;
-				border-color: #faebcc  !important;
-				    color: black !important;
-		  }
-		  .manage_users{
-		  	min-width: 120px;
-		  	width: 120px !important;
-		  }
-		  .navbar-custom-menu .fa-angle-down{
-		  	padding-top:4px;
-		  }
-		  .help.dropdown-menu{background:rgba(0,0,0,0.8)}
-		  .help.dropdown-menu>li>a{color:#fff !important; text-align:center; font-size:16px;font-family: segoeuisemb;}
-		  .help.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .help.dropdown-menu>.active>a:hover{
-		  	background:none !important; 
-		  }
-		  .help.dropdown-menu li{padding:0 25px; margin-bottom:15px;}
-		  .navbar-custom-menu>.navbar-nav>li>.help.dropdown-menu{    border-radius: 0;}
-		  .help.dropdown-menu>li>a:hover{background:none !important;border-bottom:solid 4px #0f85bb; }
-	  </style>
-
-	  <!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151981830-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag("js", new Date());
-
-		  gtag("config", "UA-151981830-1");
-		</script>
-	</head>
-';
-}
-
-
 	/*$id_user=$common->idUser();
 	$fetch_user_details = mysqli_query($connect,"SELECT * FROM all_users WHERE user_id=".$id_user);
 	$row_usr = mysqli_fetch_array($fetch_user_details);		
@@ -577,7 +463,7 @@ function admin_top_bar_new(){
 					  </div>
 					  <div class="media-body">
 					    <p class="mb-1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
-					    <p class="date">17/06/2020</p>
+					    <p class="date">17/06/2019</p>
 					  </div>
 					</div>
 					</a>
@@ -589,7 +475,7 @@ function admin_top_bar_new(){
 					  </div>
 					  <div class="media-body">
 					    <p class="mb-1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
-					    <p class="date">17/06/2020</p>
+					    <p class="date">17/06/2019</p>
 					  </div>
 					</div>
 					</a>
@@ -601,7 +487,7 @@ function admin_top_bar_new(){
 					  </div>
 					  <div class="media-body">
 					    <p class="mb-1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
-					    <p class="date">17/06/2020</p>
+					    <p class="date">17/06/2019</p>
 					  </div>
 					</div>
 					</a>
@@ -615,7 +501,7 @@ function admin_top_bar_new(){
 				  </div>
 				  <div class="media-body">
 				    <p class="mb-1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
-				    <p class="date">17/06/2020</p>
+				    <p class="date">17/06/2019</p>
 				  </div>
 				</div>
 				</a>
@@ -628,7 +514,7 @@ function admin_top_bar_new(){
 					  </div>
 					  <div class="media-body">
 					    <p class="mb-1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
-					    <p class="date">17/06/2020</p>
+					    <p class="date">17/06/2019</p>
 					  </div>
 					</div>
 					</a>
@@ -641,7 +527,7 @@ function admin_top_bar_new(){
 					  </div>
 					  <div class="media-body">
 					    <p class="mb-1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.</p>
-					    <p class="date">17/06/2020</p>
+					    <p class="date">17/06/2019</p>
 					  </div>
 					</div>
 					</a>
@@ -653,7 +539,7 @@ function admin_top_bar_new(){
 				<div class="contentBox">
 				<a href="#" class="close-arrow show_hide2"><img src="images/arrow-pointing-to-right.png" width="30" /></a>
 					<h3 class="blue-n-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</h3>
-					<p class="date">17/07/2020</p>
+					<p class="date">17/07/2019</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 					</p>
 					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
@@ -725,48 +611,12 @@ function admin_left_menu($evt_id = NULL){
                         if(mysqli_num_rows($fetch_submenu) > 0)
                         {
 
-                        	if((strpos($current_url, 'dashboard.php') !== false) || (strpos($current_url, 'dashboard-sponsor.php') !== false) || (strpos($current_url, 'master-dashboard.php') !== false))
-                        	{
-                        		$currenturl='dashboard.php';
-                        	}else
-                        	if((strpos($current_url, 'email_template.php') !== false) || (strpos($current_url, 'scheduled_email_list.php') !== false))
-                        	{
-                        		$currenturl='email_template.php';
-                        	}else
-                        	if((strpos($current_url, 'all-speakers.php') !== false) || (strpos($current_url, 'new-speakers.php') !== false) || ($current_url == 'bulk-notify.php' ) || (strpos($current_url, 'email_status.php') !== false) || (strpos($current_url, 'speaker_types.php') !== false) || (strpos($current_url, 'approved-speakers.php') !== false))
-                        	{
-                        		$currenturl='all-speakers.php';
-                        	}else
-                        	if((strpos($current_url, 'all-sponsors.php') !== false) || ($current_url == 'sponsor-bulk-notify.php' ) || (strpos($current_url, 'status_sponsor.php') !== false) || (strpos($current_url, 'sponsor_types.php') !== false))
-                        	{
-                        		$currenturl='all-sponsors.php';
-                        	}else
-                        	if((strpos($current_url, 'all-masters.php') !== false) || (strpos($current_url, 'new-masters.php') !== false) || ($current_url == 'master-bulk-notify.php' ) || (strpos($current_url, 'master_types.php') !== false))
-                        	{
-                        		$currenturl='all-masters.php';
-                        	}else
-                        	if((strpos($current_url, 'all_presentation.php') !== false)|| (strpos($current_url, 'new_presentation.php') !== false) || (strpos($current_url, 'session_type_setting.php') !== false) || (strpos($current_url, 'session_level_setting.php') !== false) || (strpos($current_url, 'content_type_setting.php') !== false) || (strpos($current_url, 'session_track_setting.php') !== false) || (strpos($current_url, 'business-focus-settings.php') !== false) || (strpos($current_url, 'product-settings.php') !== false) || (strpos($current_url, 'line-of-business-settings.php') !== false))
-                        	{
-                        		$currenturl='all_presentation.php';
-                        	}else
-                        	if((strpos($current_url, 'action-trackers.php') !== false) || (strpos($current_url, 'action_types.php') !== false))
-                        	{
-                        		$currenturl='action-trackers.php';
-                        	}else
-                        	if((strpos($current_url, 'resource-tracker.php') !== false) || (strpos($current_url, 'resource_types.php') !== false))
-                        	{
-                        		$currenturl='resource-tracker.php';
-                        	}else
-                        	{
-                        		$currenturl='';
-                        	}
-
                     ?>
                     <?php
 			            	 if($res_menu['has_submenu'] > 0)
                         {
                         	
-		                    echo '<li class="treeview '; if((strpos($currenturl, $res_menu['url']) !== false) || ($current_url == 'dashboard.php' ) ) echo 'active';  
+		                    echo '<li class="treeview '; if((strpos($current_url, $res_menu['url']) !== false) || ($current_url == 'dashboard.php' ) ) echo 'active';  
 							echo '">';
 							?>
 					          <a href="<?php echo $res_menu['url'].'?eid='.base64_encode($event_id).':'.base64_encode(rand(100,999)); ?>">
@@ -834,10 +684,6 @@ function admin_left_menu($evt_id = NULL){
 									$target="";
 									$sub_menu_url = $res_submenu['sub_menu_url'].'&eid='.base64_encode($event_id).':'.base64_encode(rand(100,999));
 								}
-								elseif(strpos($res_submenu['sub_menu_url'], 'approved-speakers-list.php')!== false ){
-									$target="";
-									$sub_menu_url = $res_submenu['sub_menu_url'].'?speakers-approved&eid='.base64_encode($event_id).':'.base64_encode(rand(100,999));
-								}								
 								else{
 									$target="";
 									$sub_menu_url = $res_submenu['sub_menu_url'].'?eid='.base64_encode($event_id).':'.base64_encode(rand(100,999));
@@ -1321,7 +1167,7 @@ function all_speaker_footer_abby(){
 
 	/* <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      Version 5.2.0
+      Version 5.0.0
     </div>
     Copyright &copy; '.date('Y').'  Meylah Corporation. All rights reserved.
   </footer>*/
@@ -2071,7 +1917,7 @@ function admin_footer_index(){
 
 	/*<footer class="main-footer">
     <div class="pull-right hidden-xs">
-      Version 5.2.0
+      Version 5.0.0
     </div>
     Copyright &copy; '.date('Y').'  Meylah Corporation. All rights reserved.
   </footer>*/
@@ -2430,7 +2276,7 @@ function admin_footer_email_template(){
 	</style>
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      Version 5.2.0
+      Version 5.0.0
     </div>
     Copyright &copy; '.date('Y').'  Meylah Corporation. All rights reserved.
   </footer>
@@ -2798,7 +2644,7 @@ function admin_footer_email_template1(){
 	</style>
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      Version 5.2.0
+      Version 5.0.0
     </div>
     Copyright &copy; '.date('Y').'  Meylah Corporation. All rights reserved.
   </footer>
@@ -3156,7 +3002,7 @@ $(".jcrop-holder").click(function(e){ e.preventDefault(); });
 function admin_footer_speaker_page(){
 	/*<footer class="main-footer">
     <div class="pull-right hidden-xs">
-      Version 5.2.0
+      Version 5.0.0
     </div>
    Copyright &copy; '.date('Y').'  Meylah Corporation. All rights reserved.
   </footer>*/
@@ -3848,7 +3694,7 @@ function admin_signup_footer(){
 	echo '<div class="logFooter white-text container-fluid">
       <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-12">
-          <span>Copyright © 2020 <a href="#" class="white-text">Meylah Corporation</a>. All rights reserved.</span>
+          <span>Copyright © 2019 <a href="#" class="white-text">Meylah Corporation</a>. All rights reserved.</span>
         </div>
   
         <div class="col-md-4 col-sm-4 col-xs-12 text-center">
@@ -3881,7 +3727,7 @@ function version_footer(){
 	echo '<footer class="main-footer">
 	<div class="row">
 		<div class="col-md-4 col-sm-4 col-xs-12">
-			Copyright &copy; 2020  Meylah Corporation. All rights reserved.
+			Copyright &copy; 2019  Meylah Corporation. All rights reserved.
 		</div>
 		<div class="col-md-4 col-sm-4 col-xs-12">
 		<center>
@@ -3890,13 +3736,37 @@ function version_footer(){
 			</center>
 		</div>
 		<div class="col-md-4 col-sm-4 col-xs-12 text-right">
-			Version 5.2.0
+			Version 5.0.0
 		</div>
 	</div>
     
   </footer>';
 
 }
+
+// function version_footer_public(){
+// 	echo '<footer class="main-footer">
+// 	<div class="row">
+// 		<div class="col-md-4 col-sm-4 col-xs-12">
+// 			Copyright &copy; 2019  Meylah Corporation. All rights reserved.
+// 		</div>
+// 		<div class="col-md-4 col-sm-4 col-xs-12">
+// 		<center>
+// 			<a href="termsofuse.php" style="color:#007DB7 ;" target="_blank" >Terms and Conditions</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+// 			<a href="privacypolicy.php" style="color:#007DB7 ;" target="_blank">Privacy Policy</a>
+// 			</center>
+// 		</div>
+// 		<div class="col-md-4 col-sm-4 col-xs-12 text-right">
+// 			powered by <a href="speakerengage.com" style="color:#007DB7 ;" target="_blank">speakerengage.com</a>
+// 			</center>
+// 		</div>
+// 	</div>
+    
+//   </footer>';
+
+// }
+
+
 
 function tc_footer(){
 
@@ -3965,15 +3835,15 @@ $current_url = $_SERVER[REQUEST_URI];
                     </a>
                 </li>
                 <li class="nav-item ';
-                                if (strpos($current_url,'/event-services') !== false){
+                                if (strpos($current_url,'/event-as-a-service') !== false){
                                     echo '  active';
                                 }  
                                 echo'">
-                    <a class="nav-link link text-info display-4" href="../event-services">
+                    <a class="nav-link link text-info display-4" href="../event-as-a-service">
                         Event Services
                     </a>
                 </li>
-               <li class="nav-item';
+                <li class="nav-item';
                                 if (strpos($current_url,'/event-directory') !== false){
                                     echo '  active';
                                 }  
@@ -3988,14 +3858,52 @@ $current_url = $_SERVER[REQUEST_URI];
     </nav>
 </section>';
 }
+function support_header(){
+	echo'<nav class="navbar navbar-expand-lg navbar-light  sub-header">
+         <div class="container">
+            
+            <div class=" " id="navbarSupportedContent1">
+               <ul class=" mr-auto">
+                  <li class="nav-item ">
+                     <a class="nav-link" href="index.php">Support Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Browse by Category
+                     </a>
+                     <div class="dropdown-menu"  aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="speaker-engage-basic.php">Speaker Engage Basics </a>
+                        <a class="dropdown-item" href="account-management.php">Account Management</a>
+                        <a class="dropdown-item" href="dashboard.php">Dashboards</a>
+                        <a class="dropdown-item" href="event-management.php">Event Management</a>
+                        <a class="dropdown-item" href="speaker.php">Speaker Management</a>
+                        <a class="dropdown-item" href="speaker-communication.php">Speaker Communication</a>
+                        <a class="dropdown-item" href="sponsor-management.php">Sponsor Management</a>
+                        <a class="dropdown-item" href="sponsor-communication.php">Sponsor Communication</a>
+                        <a class="dropdown-item" href="master-management.php">Master Management</a>
+                        <a class="dropdown-item" href="master-communication.php">Master Communication</a>
+                        <a class="dropdown-item" href="notification-engine.php">Notification Engine</a>
+                        <a class="dropdown-item" href="action-tracker.php">Action Tracker</a>
+                        <a class="dropdown-item" href="resource-management.php">Resource Management</a>
+                        <a class="dropdown-item" href="billing.php">Billing</a>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="javascript:" id="return-to-top"><i class="fa fa-2x fa-angle-up" aria-hidden="true"></i></a>
 
+      ';
+}
 function landing_footer(){
 
-	echo '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"> <section class="cid-rHfVaaAqES" id="footer03-4">
+	echo '<section class="cid-rHfVaaAqES" id="footer03-4">
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="media-container-row content text-white">
-            <div class="col-12 col-md-4 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3">
                 
 
                 <p class="mbr-text align-left text1 mbr-fonts-style display-4">
@@ -4003,8 +3911,8 @@ function landing_footer(){
                 </p>
 
             </div>
-            <div class="col-12 col-md-4 col-lg-4 mbr-fonts-style display-4">
-                <h5 class="pb-3 align-center">
+            <div class="col-12 col-md-6 col-lg-3 mbr-fonts-style display-4">
+                <h5 class="pb-3 align-left">
                     Contact Info
                 </h5>
 
@@ -4017,30 +3925,18 @@ function landing_footer(){
                     </div>
                 </div> -->
 
-                <div class=""> 
-                    <div class="">
-                        <h4 class="item-title align-center mbr-fonts-style display-4 mb-3"><i class="fa fa-envelope-o mr-1" aria-hidden="true"></i> <a href="mailto:support@speakerengage.com" style="color:#fff; ">support@speakerengage.com</a></h4>
+                <div class="item">
+                    <div class="card-img"><span class="mbr-iconfont img1 mbri-letter"></span></div>
+                    <div class="card-box">
+                        <h4 class="item-title align-left mbr-fonts-style display-4">support@speakerengage.com</h4>
                     </div>
-                    <div class="clearfix"></div>
-                    <ul class="d-block social-share">
-                        <li>
-                            <a href="https://twitter.com/speaker_engage"  target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/speaker_engage/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="http://facebook.com/speakerengage "  target="_blank"><i class="fa fa-facebook" aria-hidden="true" ></i></a>
-                        </li>
-                    </ul> 
-
                 </div>
             </div>
             
-            <div class="col-12 col-md-4 col-lg-3 mbr-fonts-style display-7">
+            <div class="col-12 col-md-6 col-lg-3 mbr-fonts-style display-7">
                 <h5 class="pb-3 align-left"><a href="../privacypolicy.php" target="_blank">Privacy</a><br><br><a href="../termsofuse.php" target="_blank">Terms of Use</a><br><br><a href="../support" target="_blank">Support</a></h5>
                 <p class="mbr-text align-left text2 mbr-fonts-style display-4" style="margin-bottom: 5px;">
-                    Copyright © '.date('Y').' Meylah Corporation. <br>All Rights Reserved
+                    Copyright © '.date(Y).' Meylah Corporation. <br>All Rights Reserved
                 </p>
                 
             </div>
@@ -4137,7 +4033,7 @@ function demo_walkthrough_footer(){
             <div class="col-12 col-md-6 col-lg-3 mbr-fonts-style display-7">
                 <h5 class="pb-3 align-left"><a href="../../privacypolicy.php" target="_blank">Privacy</a><br><br><a href="../../termsofuse.php" target="_blank">Terms of Use</a><br><br><a href="../../faqs" target="_blank">FAQs</a></h5>
                 <p class="mbr-text align-left text2 mbr-fonts-style display-4" style="margin-bottom: 5px;">
-                    Copyright © 2020 Meylah Corporation. <br>All Rights Reserved
+                    Copyright © 2019 Meylah Corporation. <br>All Rights Reserved
                 </p>
                 
             </div>
@@ -4154,13 +4050,13 @@ function version_footer_static(){
      <div class="">
         
      <div class="col-md-4   poweredby">
-            <span>Copyright © 2020 <a href="http://meylah.com/" target="_blank" class="white-text">Meylah Corporation</a>. All rights reserved.</span>
+            <span>Copyright © 2019 <a href="http://meylah.com/" target="_blank" class="white-text">Meylah Corporation</a>. All rights reserved.</span>
          </div>
        <div class="col-md-4  text-center">
          <a href="privacypolicy.php" class="white-text" target="_blank">Privacy Policy</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="termsofuse.php" class="white-text" target="_blank">Terms and Conditions</a>
        </div>
        <div class="col-md-4 col-sm-4 col-xs-12 text-right">
-     Version 5.2.0
+     Version 5.0.0
    </div>
      
        </div>
@@ -4173,6 +4069,119 @@ function admin_way_top_SA(){
 	$common = $GLOBALS['common'];
 	$site_name = $GLOBALS['site_name'];
 
+	echo '<!DOCTYPE html>
+	<html>
+	<head>
+	  <meta charset="utf-8"> 
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <title>Speaker Engage | Admin Portal</title>
+	  <!-- Tell the browser to be responsive to screen width -->
+	  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	  <!-- App Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<!-- App Title -->
+		<title>'.$site_name.' | Admin Portal</title>
+	  <!-- Bootstrap 3.3.7 -->
+	  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	 
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <!-- Ionicons -->
+	  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+	  <!-- DataTables -->
+      <link href="assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+	  <link href="assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />		
+	  <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+	  <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css" />
+	  <!-- Theme style -->
+	  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+	  <!-- AdminLTE Skins. Choose a skin from the css/skins
+		   folder instead of downloading all of them to reduce the load. -->
+	  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+	  <!-- Morris chart -->
+	  <link rel="stylesheet" href="bower_components/morris.js/morris.css">
+	  
+	  <!-- Date Picker -->
+	  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+	  <!-- Daterange picker -->
+	  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+	  
+
+	  <!-- Google Font -->
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+	  
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  
+	  
+
+	  <style>
+	  .modal img#banner_image {
+    max-width: 615px;
+}
+    .wrapper {
+      overflow: hidden !important;
+    }
+	  @media (min-width: 768px){
+	  .modal-content{ margin-top: 30px !important;width: 50% !important;margin: 0 auto !important; }
+	  .custom-modal-text {padding:15px !important;}
+	  }
+	   .cropme img{ width:600px !important; }
+	    .multiselect.dropdown-toggle.btn.btn-default{
+			  text-align:left;
+		  }
+		  .btn-group .caret{
+			  float: right;
+    margin-top: 8px;
+		  }
+		  .mce-content-body a[href]{color:blue !important;}
+		  .alert-cust{
+			  background-color: #fcf8e3  !important;
+				border-color: #faebcc  !important;
+				    color: black !important;
+		  }
+		  .manage_users{
+		  	min-width: 120px;
+		  	width: 120px !important;
+		  }
+		  .navbar-custom-menu .fa-angle-down{
+		  	padding-top:4px;
+		  }
+		  .help.dropdown-menu{background:rgba(0,0,0,0.8)}
+		  .help.dropdown-menu>li>a{color:#fff !important; text-align:center; font-size:16px;font-family: segoeuisemb;}
+		  .help.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .help.dropdown-menu>.active>a:hover{
+		  	background:none !important; 
+		  }
+		  .help.dropdown-menu li{padding:0 25px; margin-bottom:15px;}
+		  .navbar-custom-menu>.navbar-nav>li>.help.dropdown-menu{    border-radius: 0;}
+		  .help.dropdown-menu>li>a:hover{background:none !important;border-bottom:solid 4px #0f85bb; }
+	  </style>
+
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151981830-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag("js", new Date());
+
+		  gtag("config", "UA-151981830-1");
+		</script>
+	</head>
+';
+}
+
+function admin_way_top_public(){
+	$connect = $GLOBALS['connect'];
+	$common = $GLOBALS['common'];
+	$site_name = $GLOBALS['site_name'];
+	$favicon = $GLOBALS['favicon'];
+	error_reporting(0);
+	/*if(!$common->CheckLogin())
+	{
+		$common->RedirectToURL("login.php");
+		exit;
+	}*/
 	echo '<!DOCTYPE html>
 	<html>
 	<head>
